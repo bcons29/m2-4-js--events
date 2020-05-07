@@ -10,4 +10,15 @@
 
 // OPTIONAL
 // Feel free to add some CSS to this once you're done
-// --------------------------------------------------
+// ------------------------------------------------
+
+const body = document.querySelector("body");
+const p1 = document.createElement("p");
+
+body.addEventListener("click", clickEvent);
+
+function clickEvent() {
+  p1.innerText = "HELLO JELLO !!";
+  body.removeEventListener("click", clickEvent);
+}
+document.body.appendChild(p1);

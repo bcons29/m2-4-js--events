@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <style>
-
+      body {
+        background: yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+      body::before {
+        font-family: "Roboto Slab", serif;
+        font-size: 48px;
+        position: absolute;
+        left: 24px;
+        top: 24px;
+      }
+      #result {
+        color: black;
+        font-size: 100px;
+        font-family: "Roboto Slab, serif";
+      }
+      .time-text {
+        color: black;
+        font-family: "Roboto Slab, serif";
+        font-size: 48px;
+        position: absolute;
+        left: 24px;
+        top: 24px;
+      }
+      .time-text span {
+        font-size: 60px;
+        color: black;
+        font-weight: 700;
+      }
     </style>
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <p class="time-text">You have <span id="time"></span> seconds to click</p>
     <p class="result" id="result"></p>
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
